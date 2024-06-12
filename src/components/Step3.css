@@ -1,0 +1,78 @@
+.body, html, #root {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .tile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  .form-tile {
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .form-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .form-subtitle {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #888;
+  }
+  
+  .view-type-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .view-type-button {
+    flex: 1;
+    padding: 10px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .view-type-button.active {
+    border-color: #007bff;
+  }
+  
+  .view-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .form-navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .nav-button:disabled {
+    background-color: #ccc;
+  }
+  
