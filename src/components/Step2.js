@@ -101,11 +101,11 @@ const Step2 = ({ prevStep, nextStep, handleChange, values }) => {
             <div className="documents-section">
               <div className="document-item">
                 <span>Electronically sign the agreement(s)</span>
-                <button type="button">></button>
+                <button type="button"></button>
               </div>
               <div className="document-item">
                 <span>Non adult beverage Kroger market supplier waiver and release</span>
-                <button type="button">></button>
+                <button type="button"></button>
               </div>
             </div>
 
@@ -114,7 +114,7 @@ const Step2 = ({ prevStep, nextStep, handleChange, values }) => {
             <div className="upload-section">
               <div className="upload-item">
                 <span>Electronically sign the agreement(s)</span>
-                <button type="button">></button>
+                <button type="button"></button>
               </div>
             </div>
           </form>
