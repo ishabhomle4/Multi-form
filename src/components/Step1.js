@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../components/MultiStepForm.css';
 
 
 const Step1 = ({ nextStep, handleChange, formData }) => {
@@ -28,7 +29,7 @@ const Step1 = ({ nextStep, handleChange, formData }) => {
             <option value="" disabled>Select a client</option>
             <option value="client1">Client 1</option>
             <option value="client2">Client 2</option>
-            {/* Add more options as needed */}
+            
           </select>
           <button type="button">+ New Client</button>
         </div>

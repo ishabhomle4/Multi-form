@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Step5.css'; 
 
 const Step5 = ({ nextStep, prevStep, handleChange, formData }) => {
   const [task, setTask] = useState('');
@@ -27,29 +28,37 @@ const Step5 = ({ nextStep, prevStep, handleChange, formData }) => {
   };
 
   return (
-    <form className="form-container">
-      <h2>Add project tasks</h2>
+    <div className="task-container">
+      <h2 className="task-title">Add project tasks</h2>
 
-      <label>Task</label>
-      <input
-        type="text"
-        value={task}
-        onChange={(e) => setTask(e.target.value)}
-      />
-      <button type="button" onClick={addTask}>Add Task</button>
+      <div className="task-input-group">
+        <input
+          type="text"
+          className="task-input"
+          placeholder="Add a task"
+          value={task}
+          onChange={(e) => setTask(e.target.value)}
+        />
+        <button type="button" className="task-add-button" onClick={addTask}>Add</button>
+      </div>
 
-      <ul>
+      <ul className="task-list">
         {tasks.map((task, index) => (
-          <li key={index}>
-            {task} <button type="button" onClick={() => removeTask(index)}>Remove</button>
+          <li key={index} className="task-item">
+            <input type="checkbox" className="task-checkbox" />
+            {task} 
+            <button type="button" className="task-remove-button" onClick={() => removeTask(index)}>×</button>
           </li>
         ))}
       </ul>
 
-      <button onClick={goBack}>Back</button>
-      <button onClick={continueStep}>Next</button>
-    </form>
+      <div className="task-navigation">
+        <button className="nav-button" onClick={goBack}>Back</button>
+        <button className="nav-button next-button" onClick={continueStep}>Next</button>
+      </div>
+    </div>
   );
 };
 
 export default Step5;
+

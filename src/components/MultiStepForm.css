@@ -29,6 +29,8 @@ body, html, #root {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+    text-align: left;
+
   }
   
   input, select, textarea {
@@ -51,10 +53,11 @@ body, html, #root {
   .client-selection button {
     margin-left: 10px;
     padding: 10px 15px;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    border: 1px solid #bab6b6;
+    background-color: #f4f2f2;
     border-radius: 4px;
     cursor: pointer;
+    color: #bab6b6;
   }
   
   .date-selection {

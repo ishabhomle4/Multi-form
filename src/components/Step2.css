@@ -1,43 +1,44 @@
+
 body, html, #root {
     height: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
-  }
+}
   
-  .tile-container {
+.tile-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background-color: #f5f5f5;
-  }
+}
   
-  .form-tile {
-    width: 400px;
+.form-tile {
+    width: 500px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #fff;
-  }
+}
   
-  .form-title {
+.form-title {
     font-size: 24px;
     margin-bottom: 10px;
-  }
+}
   
-  .form-subtitle {
+.form-subtitle {
     font-size: 14px;
     margin-bottom: 20px;
     color: #888;
-  }
+}
   
-  .project-type-buttons {
+.project-type-buttons {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-  }
+}
   
-  .project-type-button {
+.project-type-button {
     flex: 1;
     padding: 10px;
     margin: 0 5px;
@@ -45,69 +46,93 @@ body, html, #root {
     border-radius: 4px;
     background-color: #f9f9f9;
     cursor: pointer;
-  }
+    color: #888;
+}
   
-  .project-type-button.active {
+.project-type-button.active {
     background-color: #007bff;
     color: #fff;
-  }
+}
   
-  .form-group {
+.form-group {
     margin-bottom: 20px;
-  }
+}
   
-  .hourly-section, .budget-section {
+.hourly-section, .budget-section {
     display: flex;
     align-items: center;
-  }
+}
   
-  .hourly-dropdown, .budget-dropdown {
+.hourly-dropdown, .budget-dropdown {
     flex: 1;
     margin-right: 10px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-  }
+}
   
-  .input-field {
+.input-field {
     flex: 2;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-  }
+    margin-left: 10px;
+}
   
-  .budget-reset {
-    display: block;
+.budget-reset {
+    display: flex;
+    align-items: center;
     margin-top: 10px;
-  }
+    margin-left: -390px;
+    
+    
+}
+.budget-reset input {
+  margin-right: -383px; /* Reduce space between checkbox and label */
+ 
+}
+
   
-  .email-alert {
+.email-alert {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-  }
+    margin-left: -370px;
+
+}
   
-  .alert-input {
-    width: 60px;
+.checkbox {
+    margin-right: 10px;
+}
+  
+.alert-input {
+    width: 36px;
     margin-left: 5px;
     margin-right: 5px;
-  }
-  
-  .form-navigation {
+    height: 10px;
+}
+.email-alert input[type="checkbox"] {
+  margin-right: -400px; /* Reduce space between checkbox and text */
+}
+
+.form-navigation {
     display: flex;
     justify-content: space-between;
-  }
+}
   
-  .nav-button {
+.nav-button {
     padding: 10px 20px;
     background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
+}
   
-  .nav-button:disabled {
+.nav-button:disabled {
     background-color: #ccc;
-  }
+}
+
+
+  
   

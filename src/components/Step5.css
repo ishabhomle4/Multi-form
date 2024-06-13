@@ -1,0 +1,89 @@
+.task-container {
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .task-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .task-input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .task-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .task-add-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+    max-height: 200px;
+    overflow-y: auto;
+    border-top: 1px solid #eee;
+  }
+  
+  .task-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .task-checkbox {
+    margin-right: 10px;
+  }
+  
+  .task-remove-button {
+    margin-left: auto;
+    padding: 0;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #888;
+    cursor: pointer;
+  }
+  
+  .task-navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .next-button {
+    background-color: #007bff;
+  }
+  
+  .nav-button:disabled {
+    background-color: #ccc;
+  }
+  
